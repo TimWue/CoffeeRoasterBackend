@@ -87,11 +87,7 @@
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
 		
-		<dependency>
-    		<groupId>com.digitalpetri.modbus</groupId>
-    		<artifactId>modbus-master-tcp</artifactId>
-    		<version>1.2.0</version>
-		</dependency>
+		
 		
 
 	</dependencies>
