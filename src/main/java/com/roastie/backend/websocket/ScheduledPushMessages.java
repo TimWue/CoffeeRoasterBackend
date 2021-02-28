@@ -17,8 +17,10 @@ import de.re.easymodbus.modbusclient.ModbusClient;
 @Service
 public class ScheduledPushMessages {
 	
+	/*
 	@Value("${modbus.address}")
 	private String modbusUrl;
+	*/
 	
 	@Value("#{${register.addresses}}")
 	private Map<String, Integer> registerMap;
@@ -29,9 +31,9 @@ public class ScheduledPushMessages {
 	Logger logger = LoggerFactory.getLogger(this.getClass());
 	ModbusClient mbclient;
 
-	public ScheduledPushMessages() {
+	public ScheduledPushMessages(@Value("${modbus.address}") String modbusUrl) {
 		try {
-			
+			System.out.println(modbusUrl);
 			mbclient = new ModbusClient(modbusUrl, 502);
 			mbclient.Connect();
 			this.logger.info("Modbus Client connected!");
@@ -42,16 +44,15 @@ public class ScheduledPushMessages {
 	}
     @Scheduled(fixedRate = 500)
     public void sendMessage() {
+
     	ArrayList<SensorMeasurement> measures = new ArrayList<SensorMeasurement>();
-		//HashMap<String, Double> measurements = new HashMap<String, Double>();
 
 			for(Map.Entry m:registerMap.entrySet()){
-				double value;
+				double value = -999.99;
 				try {
 					int[] result = mbclient.ReadInputRegisters((int) m.getValue(), 3);
 					value = (double) result[2]/10;
 				} catch (Exception e) {
-					value = -999.99;
 					e.printStackTrace();
 					
 				}

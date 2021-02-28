@@ -5,13 +5,13 @@ import java.util.Date;
 public class SensorMeasurement {
 	
 	private String sensorName;
-	private Date time;
+	private long time;
 	private double value;
 	
 	public SensorMeasurement(String sensorName, double value) {
 		super();
 		this.sensorName = sensorName;
-		this.time = new Date();
+		this.time = (new Date()).getTime();
 		this.value = value;
 	}
 
@@ -19,7 +19,7 @@ public class SensorMeasurement {
 		return sensorName;
 	}
 
-	public Date getTime() {
+	public long getTime() {
 		return time;
 	}
 
