@@ -37,10 +37,9 @@ public class Roast {
 	@NotNull
 	private Date dateTime;
 	
-	@ElementCollection
 	@OneToMany(cascade = CascadeType.ALL , orphanRemoval = true)
 	@NotNull(message = "No data available")
-	private List<Measurement> data;
+	private List<MultipleMeasurement> data;
 	
 	
 
@@ -57,11 +56,11 @@ public class Roast {
 	}
 
 	
-	public List<Measurement> getData() {
+	public List<MultipleMeasurement> getData() {
 		return data;
 	}
 
-	public void setData(List<Measurement> data) {
+	public void setData(List<MultipleMeasurement> data) {
 		this.data = data;
 	}
 

@@ -33,10 +33,9 @@ public class ScheduledPushMessages {
 
 	public ScheduledPushMessages(@Value("${modbus.address}") String modbusUrl) {
 		try {
-			System.out.println(modbusUrl);
 			mbclient = new ModbusClient(modbusUrl, 502);
 			mbclient.Connect();
-			this.logger.info("Modbus Client connected!");
+			this.logger.info("Modbus Client connected! (IP: " + modbusUrl + ")");
 			
 			
 		}  catch (Exception e) {
@@ -53,7 +52,8 @@ public class ScheduledPushMessages {
 					int[] result = mbclient.ReadInputRegisters((int) m.getValue(), 3);
 					value = (double) result[2]/10;
 				} catch (Exception e) {
-					e.printStackTrace();
+					//e.printStackTrace();
+					logger.info("No Measurment received");
 					
 				}
 			    measures.add(new SensorMeasurement(m.getKey().toString(), value));
