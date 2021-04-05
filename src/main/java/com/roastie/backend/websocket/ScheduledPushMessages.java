@@ -50,7 +50,8 @@ public class ScheduledPushMessages {
 				double value = -999.99;
 				try {
 					int[] result = mbclient.ReadInputRegisters((int) m.getValue(), 3);
-					value = (double) result[2]/10;
+					value = (double) result[2]/40;
+					logger.info("Temperature: " + value);
 				} catch (Exception e) {
 					//e.printStackTrace();
 					logger.info("No Measurment received");
