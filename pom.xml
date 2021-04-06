@@ -87,6 +87,12 @@
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
 		
+		<dependency>
+			<groupId>com.easymodbus</groupId>
+			<artifactId>modbus</artifactId>
+			<version>1.0</version>
+		</dependency>
+		
 		
 		
 
