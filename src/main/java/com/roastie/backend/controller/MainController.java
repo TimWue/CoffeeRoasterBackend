@@ -20,10 +20,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.roastie.backend.jpa.RoastRepository;
 import com.roastie.backend.jpa.entity.Roast;
+//@CrossOrigin(origins = "http://localhost:4200")
 
 @RestController  // This means that this class is a Controller
 @RequestMapping(path="/roast") // This means URL's start with /demo (after Application path)
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class MainController {
 	
 	@Autowired

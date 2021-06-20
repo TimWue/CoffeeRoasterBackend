@@ -17,7 +17,7 @@ public class MultipleMeasurement {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	int id;
 	
-	@ElementCollection
+	//@ElementCollection
 	@OneToMany(cascade = CascadeType.ALL , orphanRemoval = true)
 	private List<Measurement> measurements;
 

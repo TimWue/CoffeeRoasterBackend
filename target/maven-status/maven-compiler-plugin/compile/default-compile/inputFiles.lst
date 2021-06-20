@@ -1,9 +1,6 @@
-C:\Users\timwu\Documents\GITS\CoffeeRoasterBackend\src\main\java\com\roastie\backend\jpa\entity\Measurement.java
-C:\Users\timwu\Documents\GITS\CoffeeRoasterBackend\src\main\java\com\roastie\backend\controller\MainController.java
-C:\Users\timwu\Documents\GITS\CoffeeRoasterBackend\src\main\java\com\roastie\backend\jpa\RoastRepository.java
-C:\Users\timwu\Documents\GITS\CoffeeRoasterBackend\src\main\java\com\roastie\backend\websocket\SensorMeasurement.java
-C:\Users\timwu\Documents\GITS\CoffeeRoasterBackend\src\main\java\com\roastie\backend\jpa\entity\Roast.java
-C:\Users\timwu\Documents\GITS\CoffeeRoasterBackend\src\main\java\com\roastie\backend\websocket\WebSocketConfig.java
-C:\Users\timwu\Documents\GITS\CoffeeRoasterBackend\src\main\java\com\roastie\backend\BackendApplication.java
-C:\Users\timwu\Documents\GITS\CoffeeRoasterBackend\src\main\java\com\roastie\backend\jpa\entity\MultipleMeasurement.java
-C:\Users\timwu\Documents\GITS\CoffeeRoasterBackend\src\main\java\com\roastie\backend\websocket\ScheduledPushMessages.java
+C:\Users\tim.wuellner\Documents\gits\CoffeeRoasterBackend\src\main\java\com\roastie\backend\BackendApplication.java
+C:\Users\tim.wuellner\Documents\gits\CoffeeRoasterBackend\src\main\java\com\roastie\backend\jpa\entity\Roast.java
+C:\Users\tim.wuellner\Documents\gits\CoffeeRoasterBackend\src\main\java\com\roastie\backend\jpa\entity\Measurement.java
+C:\Users\tim.wuellner\Documents\gits\CoffeeRoasterBackend\src\main\java\com\roastie\backend\jpa\entity\MultipleMeasurement.java
+C:\Users\tim.wuellner\Documents\gits\CoffeeRoasterBackend\src\main\java\com\roastie\backend\controller\MainController.java
+C:\Users\tim.wuellner\Documents\gits\CoffeeRoasterBackend\src\main\java\com\roastie\backend\jpa\RoastRepository.java

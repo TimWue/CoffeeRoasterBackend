@@ -1,0 +1,6 @@
+com\roastie\backend\jpa\entity\MultipleMeasurement.class
+com\roastie\backend\BackendApplication.class
+com\roastie\backend\jpa\RoastRepository.class
+com\roastie\backend\jpa\entity\Roast.class
+com\roastie\backend\jpa\entity\Measurement.class
+com\roastie\backend\controller\MainController.class
